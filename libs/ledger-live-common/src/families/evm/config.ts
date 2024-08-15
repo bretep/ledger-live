@@ -629,6 +629,22 @@ const evmConfig: CurrencyLiveConfigDefinition = {
       showNfts: false,
     },
   },
+  config_currency_pulsechain: {
+    type: "object",
+    default: {
+      status: {
+        type: "active",
+      },
+      node: {
+        type: "external",
+        uri: "https://rpc.pulsechain.com",
+      },
+      explorer: {
+        type: "blockscout",
+        uri: "https://api.scan.pulsechain.com/api",
+      },
+    },
+  },
   config_currency_base: {
     type: "object",
     default: {
@@ -756,6 +772,22 @@ const evmConfig: CurrencyLiveConfigDefinition = {
         uri: "https://proxyetherscan.api.live.ledger.com/v2/api/1442",
       },
       showNfts: false,
+    },
+  },
+  config_currency_pulsechain_testnet: {
+    type: "object",
+    default: {
+      status: {
+        type: "active",
+      },
+      node: {
+        type: "external",
+        uri: "https://rpc.v4.testnet.pulsechain.com",
+      },
+      explorer: {
+        type: "blockscout",
+        uri: "https://api.scan.v4.testnet.pulsechain.com/api",
+      },
     },
   },
   config_currency_base_sepolia: {
